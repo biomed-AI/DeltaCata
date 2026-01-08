@@ -1,7 +1,6 @@
 from prepare import Inference_prepare_feature
 import json
 import argparse
-import datetime
 from tqdm import tqdm
 from model import DeltaCata
 from torch_geometric.loader import DataLoader
@@ -149,7 +148,7 @@ with open(args.input, 'r', encoding='utf-8') as file:
     nn_config = json.load(file)
     
 nn_config['input']=args.input
-nn_config['job_name'] = 'run_' + datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
+nn_config['job_name'] = nn_config["protein"]['name'] + "_dms" if nn_config['mutant'] == 'dms' else nn_config["protein"]['name']
 nn_config['feature_path']=args.feature_path + nn_config['job_name'] + "/"
 os.makedirs(nn_config['feature_path'],exist_ok=True)
 nn_config['output']=args.output
