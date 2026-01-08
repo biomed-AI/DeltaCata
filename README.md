@@ -13,7 +13,7 @@ DeltaCata is a siamese geometric graph neural network for direct predictions of 
 
 ## 💻 Local Installation <a name="local-installation"></a>
 
-To run DeltaCata on a local machine, please follow the instructions below.
+To run DeltaCata on a local machine, please follow the instructions below. DeltaCata was tested on a workstation equipped with an NVIDIA RTX 3090 GPU (CUDA 11.8) and Ubuntu 20.04.4. Environment setup typically takes about 1 hour depending on the internet bandwidth.
 
 ### 📦 Requirements <a name="requirements"></a>
 ```
@@ -35,7 +35,7 @@ pip install rdkit
 
 
 ### 🔍 Inference <a name="inference"></a>
-This project supports two inference modes:
+DeltaCata supports two inference modes:
 
 1. User-specified mutations (see `input_json/example.json`).
 2. In silico deep mutational scanning (see `input_json/example_dms.json`).
@@ -45,10 +45,10 @@ Both modes require a protein sequence, a substrate SMILES string, and the corres
 ```
 cd Inference/
 
-# Mode 1: specified mutations (example.json)
+# Mode 1: specified mutations (example.json, typically takes 1 minute)
 python inference.py --input input_json/example.json
 
-# Mode 2: deep mutational scanning (example_dms.json)
+# Mode 2: deep mutational scanning (example_dms.json, typically takes 30 minutes)
 python inference.py --input input_json/example_dms.json
 ```
 
