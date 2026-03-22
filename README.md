@@ -58,6 +58,8 @@ python inference.py --input input_json/example_dms.json
 * pdb_path: string; path to the wild-type PDB file.
 * mutant: string; in mode 1, ";" is used to separate different mutants, while "," is used to separate multiple mutated sites in a multiple-point mutant.
 
+**Note:** To predict $\Delta$*k*<sub>cat</sub> for a multi-substrate reaction, users can either separately predict the kinetic changes for all involved substrates and calculate their average, or select the primary target substrate as the model input while omitting common co-substrates (e.g., ATP, NADH, SAM, etc.).
+
 ### 🔁 Reproducibility <a name="reproduce"></a>
 Using the splits in `Dataset/test_dataset/` and protein structures in `Dataset/test_pdbs/`, the following pipeline reproduces the reported results.
 ```
