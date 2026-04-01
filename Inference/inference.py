@@ -17,7 +17,7 @@ def Inference(config):
     output_path = config['output']
     os.makedirs(output_path, exist_ok = True)
     
-    artifacts_path = config['artifacts_path']
+    artifacts_path = config['artifacts_path'] + "anti-symmetry_model/"
 
     num_workers = 8
     dropout=0.0
