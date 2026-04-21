@@ -1,0 +1,1 @@
+['100 mM Tris, 20 mM KCl, 25 mM MgCl2', '100 mM Tris, 20 mM KCl, 25 mM MgCl2', '100 mM Tris, 20 mM KCl, 25 mM MgCl2', '100 mM Tris, 20 mM KCl, 25 mM MgCl2', '100 mM Tris, 20 mM KCl, 25 mM MgCl2']

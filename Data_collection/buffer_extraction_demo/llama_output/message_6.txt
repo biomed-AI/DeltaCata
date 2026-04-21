@@ -1,0 +1,1 @@
+['mutant enzyme L461G, in potassium phosphate buffer (pH 6.5, 50 mM)', 'mutant enzyme A460G, in potassium phosphate buffer (pH 6.5, 50 mM)', 'wild type enzyme, in TEA buffer (pH 7.6, 100 mM), at 25°C', 'mutant enzyme E97Q, in TEA buffer (pH 7.6, 100 mM), at 25°C', 'mutant enzyme E165A, in TEA buffer (pH 7.6, 100 mM), at 25°C']

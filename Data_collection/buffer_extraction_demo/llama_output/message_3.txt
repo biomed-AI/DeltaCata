@@ -1,0 +1,1 @@
+['wild-type, pH 7.6, 37°C', 'mutant T90A/T156A, pH 7.6, 37°C', 'mutant T90A, pH 7.6, 37°C', 'mutant T156A, pH 7.6, 37°C', 'mutant T90S, pH 7.6, 37°C']

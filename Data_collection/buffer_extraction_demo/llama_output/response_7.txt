@@ -1,0 +1,1 @@
+['100 mM Tris (pH 8.0), 20 mM KCl, 25 mM MgCl2', '100 mM Tris (pH 8.0), 20 mM KCl, 25 mM MgCl2', '100 mM Tris (pH 8.0), 20 mM KCl, 25 mM MgCl2', '100 mM Tris (pH 8.0), 20 mM KCl, 25 mM MgCl2', '100 mM Tris (pH 8.0), 20 mM KCl, 25 mM MgCl2']

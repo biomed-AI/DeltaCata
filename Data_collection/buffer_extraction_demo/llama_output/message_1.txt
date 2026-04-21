@@ -1,0 +1,1 @@
+['mutant Y88T, pH 7.0, 25°C', 'mutant Y88I, pH 7.0, 25°C', 'mutant Y88V, pH 7.0, 25°C', 'mutant Y88M, pH 7.0, 25°C', 'mutant Y88C, pH 7.0, 25°C']

@@ -1,0 +1,1 @@
+['mutant V206I, pH 7.6, 37°C', 'mutant T156S, pH 7.6, 37°C', 'mutant T90R, pH 7.6, 37°C', 'mutant T90R/T156A, pH 7.6, 37°C', 'wild type enzyme, in 100 mM Bicine-NaOH (pH 8.3) and 10 mM MgCl2, temperature not specified in the publication']

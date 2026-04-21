@@ -1,0 +1,60 @@
+wild-type, pH 7.0, 25°C
+mutant Y88E, pH 7.0, 25°C
+mutant Y88D, pH 7.0, 25°C
+mutant Y88W, pH 7.0, 25°C
+mutant Y88Q, pH 7.0, 25°C
+mutant Y88T, pH 7.0, 25°C
+mutant Y88I, pH 7.0, 25°C
+mutant Y88V, pH 7.0, 25°C
+mutant Y88M, pH 7.0, 25°C
+mutant Y88C, pH 7.0, 25°C
+mutant Y88H, pH 7.0, 25°C
+mutant Y88S, pH 7.0, 25°C
+mutant Y88A, pH 7.0, 25°C
+mutant Y88L, pH 7.0, 25°C
+mutant Y88F, pH 7.0, 25°C
+wild-type, pH 7.6, 37°C
+mutant T90A/T156A, pH 7.6, 37°C
+mutant T90A, pH 7.6, 37°C
+mutant T156A, pH 7.6, 37°C
+mutant T90S, pH 7.6, 37°C
+mutant V206I, pH 7.6, 37°C
+mutant T156S, pH 7.6, 37°C
+mutant T90R, pH 7.6, 37°C
+mutant T90R/T156A, pH 7.6, 37°C
+wild type enzyme, in 100 mM Bicine-NaOH (pH 8.3) and 10 mM MgCl2, temperature not specified in the publication
+mutant enzyme V330T, in 100 mM Bicine-NaOH (pH 8.3) and 10 mM MgCl2, temperature not specified in the publication
+wild type enzyme, in potassium phosphate buffer (pH 6.5, 50 mM)
+mutant enzyme L461V, in potassium phosphate buffer (pH 6.5, 50 mM)
+mutant enzyme L461A, in potassium phosphate buffer (pH 6.5, 50 mM)
+mutant enzyme P24A, in potassium phosphate buffer (pH 6.5, 50 mM)
+mutant enzyme L461G, in potassium phosphate buffer (pH 6.5, 50 mM)
+mutant enzyme A460G, in potassium phosphate buffer (pH 6.5, 50 mM)
+wild type enzyme, in TEA buffer (pH 7.6, 100 mM), at 25°C
+mutant enzyme E97Q, in TEA buffer (pH 7.6, 100 mM), at 25°C
+mutant enzyme E165A, in TEA buffer (pH 7.6, 100 mM), at 25°C
+wild type enzyme, in 100 mM Tris buffer (pH 8.0) with 20 mM KCl and 25 mM MgCl2
+mutant enzyme E352Q, in 100 mM Tris buffer (pH 8.0) with 20 mM KCl and 25 mM MgCl2
+mutant enzyme E352D, in 100 mM Tris buffer (pH 8.0) with 20 mM KCl and 25 mM MgCl2
+mutant enzyme E268Q, in 100 mM Tris buffer (pH 8.0) with 20 mM KCl and 25 mM MgCl2
+mutant enzyme D296A, in 100 mM Tris buffer (pH 8.0) with 20 mM KCl and 25 mM MgCl2
+mutant enzyme R179A, in 100 mM Tris buffer (pH 8.0) with 20 mM KCl and 25 mM MgCl2
+mutant enzyme T267A, in 100 mM Tris buffer (pH 8.0) with 20 mM KCl and 25 mM MgCl2
+mutant enzyme D318A, in 100 mM Tris buffer (pH 8.0) with 20 mM KCl and 25 mM MgCl2
+mutant enzyme Q372A, in 100 mM Tris buffer (pH 8.0) with 20 mM KCl and 25 mM MgCl2
+mutant enzyme Q161A, in 100 mM Tris buffer (pH 8.0) with 20 mM KCl and 25 mM MgCl2
+mutant enzyme E355A, in 100 mM Tris buffer (pH 8.0) with 20 mM KCl and 25 mM MgCl2
+pH 8.5, temperature not specified in the publication, wild-type enzyme, 0.2 M H2O2
+pH 8.5, temperature not specified in the publication, wild-type enzyme, 0.1 M H2O2
+pH 8.5, temperature not specified in the publication, wild-type enzyme, 0.05 M H2O2
+pH 8.5, temperature not specified in the publication, wild-type enzyme, no H2O2
+pH 8.5, temperature not specified in the publication, mutant E302G, no H2O2
+pH 8.5, temperature not specified in the publication, mutant C243S, 0.2 M H2O2
+pH 8.5, temperature not specified in the publication, mutant C243S, no H2O2
+pH 8.5, temperature not specified in the publication, mutant C243S, 0.1 M H2O2
+pH 8.5, temperature not specified in the publication, mutant C206S, no H2O2
+pH 8.5, temperature not specified in the publication, mutant C206S, 0.2 M H2O2
+pH 8.5, temperature not specified in the publication, mutant C206S/C243S, 0.2 M H2O2
+pH 8.5, temperature not specified in the publication, mutant C206S/C243S, 0.1 M H2O2
+pH 8.5, temperature not specified in the publication, mutant C206S, 00.1 M H2O2
+pH 8.5, temperature not specified in the publication, mutant C206S/C243S, no H2O2

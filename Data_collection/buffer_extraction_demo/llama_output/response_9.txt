@@ -1,0 +1,1 @@
+['100 mM Tris buffer with 20 mM KCl and 25 mM MgCl2', '0.2 M H2O2', '0.1 M H2O2', '0.05 M H2O2', '-']

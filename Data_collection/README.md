@@ -12,6 +12,7 @@ pip install pubchempy
 pip install numpy
 pip install lxml
 pip install html5lib
+pip install openai
 ```
 
 ## Usage
@@ -29,4 +30,4 @@ Merge the two databases and remove duplicates.
 
 Tips:   
 1. Ensure network availability for external data resources (BRENDA, SABIO-RK).
-2. We used Llama 3.1 405B language model to parse buffer information from the free‑text "COMMENTARY" field in BRENDA, followed by careful manual review to ensure accuracy. Please refer to our paper for more details of the manual process.
+2. We used Llama 3.1 405B language model to parse buffer information from the free‑text "COMMENTARY" field in BRENDA, followed by careful manual review to ensure accuracy. Please refer to our paper for more details of the manual process, or check out the "Extract buffer information" section in `01Download and preprocess BRENDA data.ipynb`.

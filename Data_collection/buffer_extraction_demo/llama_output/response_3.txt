@@ -1,0 +1,3 @@
+Since the input string list does not contain any buffer information, all elements in the returned result list are '-':
+
+['-', '-', '-', '-', '-']
