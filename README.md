@@ -43,7 +43,7 @@ DeltaCata supports two inference modes:
 Both modes require a protein sequence, a substrate SMILES string, and the corresponding PDB file path.
 
 ```
-cd Inference/
+cd Inference/ && chmod +x ./artifacts/dssp-2.0.4/mkdssp
 
 # Mode 1: specified mutations (example.json, typically takes 1 minute)
 python inference.py --input input_json/example.json
