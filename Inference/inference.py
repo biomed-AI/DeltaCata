@@ -79,19 +79,27 @@ def Inference(config):
             
             
             kcat_mut_preds = [outputs[0] for outputs in kcat_mut_outputs]
-            kcat_mut_preds = torch.stack(kcat_mut_preds,0).mean(0).detach().cpu().numpy() 
+            kcat_mut_preds = torch.stack(kcat_mut_preds,0)
+            kcat_mut_std = kcat_mut_preds.std(0).detach().cpu().numpy() # uncertainty estimation
+            kcat_mut_preds = kcat_mut_preds.mean(0).detach().cpu().numpy() 
             kcat_seq_preds = [outputs[0] for outputs in kcat_seq_outputs]
-            kcat_seq_preds = torch.stack(kcat_seq_preds,0).mean(0).detach().cpu().numpy() 
+            kcat_seq_preds = torch.stack(kcat_seq_preds,0)
+            kcat_seq_std = kcat_seq_preds.std(0).detach().cpu().numpy()
+            kcat_seq_preds = kcat_seq_preds.mean(0).detach().cpu().numpy() 
             km_mut_preds = [outputs[0] for outputs in km_mut_outputs]
-            km_mut_preds = torch.stack(km_mut_preds,0).mean(0).detach().cpu().numpy() 
+            km_mut_preds = torch.stack(km_mut_preds,0)
+            km_mut_std = km_mut_preds.std(0).detach().cpu().numpy()
+            km_mut_preds = km_mut_preds.mean(0).detach().cpu().numpy() 
             km_seq_preds = [outputs[0] for outputs in km_seq_outputs]
-            km_seq_preds = torch.stack(km_seq_preds,0).mean(0).detach().cpu().numpy() 
+            km_seq_preds = torch.stack(km_seq_preds,0)
+            km_seq_std = km_seq_preds.std(0).detach().cpu().numpy()
+            km_seq_preds = km_seq_preds.mean(0).detach().cpu().numpy() 
             
                 
         names = wt_data.name 
         for i, name in enumerate(names):
-            test_mut_pred_dict[name] = [kcat_mut_preds[i],km_mut_preds[i],kcat_mut_preds[i]-km_mut_preds[i]]
-            test_seq_pred_dict[name] = [kcat_seq_preds[i],km_seq_preds[i],kcat_seq_preds[i]-km_seq_preds[i]]
+            test_mut_pred_dict[name] = [kcat_mut_preds[i],km_mut_preds[i],kcat_mut_preds[i]-km_mut_preds[i],kcat_mut_std[i],km_mut_std[i]]
+            test_seq_pred_dict[name] = [kcat_seq_preds[i],km_seq_preds[i],kcat_seq_preds[i]-km_seq_preds[i],kcat_seq_std[i],km_seq_std[i]]
         
     dms_df = pd.read_csv(config['dms_path'])
 
@@ -102,6 +110,11 @@ def Inference(config):
     km_seq_preds = []
     kcatOverkm_seq_preds = []
 
+    kcat_mut_std = []
+    km_mut_std = []
+    kcat_seq_std = []
+    km_seq_std = []
+
     kcatOverkm_avgLevel_preds = []
 
     for _,row in dms_df.iterrows():
@@ -109,10 +122,14 @@ def Inference(config):
         kcat_mut_preds.append(test_mut_pred_dict[index][0])
         km_mut_preds.append(test_mut_pred_dict[index][1])
         kcatOverkm_mut_preds.append(test_mut_pred_dict[index][2])
+        kcat_mut_std.append(test_mut_pred_dict[index][3])
+        km_mut_std.append(test_mut_pred_dict[index][4])
 
         kcat_seq_preds.append(test_seq_pred_dict[index][0])
         km_seq_preds.append(test_seq_pred_dict[index][1])
         kcatOverkm_seq_preds.append(test_seq_pred_dict[index][2])
+        kcat_seq_std.append(test_seq_pred_dict[index][3])
+        km_seq_std.append(test_seq_pred_dict[index][4])
 
         kcatOverkm_avgLevel_preds.append((test_mut_pred_dict[index][2]+test_seq_pred_dict[index][2])/2)
     
@@ -120,6 +137,10 @@ def Inference(config):
     dms_df['km_mut_preds']=km_mut_preds
     dms_df['kcat_seq_preds']=kcat_seq_preds
     dms_df['km_seq_preds']=km_seq_preds
+    dms_df['kcat_mut_std']=kcat_mut_std
+    dms_df['km_mut_std']=km_mut_std
+    dms_df['kcat_seq_std']=kcat_seq_std
+    dms_df['km_seq_std']=km_seq_std
     dms_df['kcatOverkm_avg_preds']=kcatOverkm_avgLevel_preds
 
     dms_df.to_csv(config['output']+config['job_name']+".csv",index=False)
