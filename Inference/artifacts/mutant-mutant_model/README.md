@@ -16,24 +16,24 @@ To examine this, we constructed an additional mutant-mutant evaluation set from 
 |  | CatPred | 0.319 | 0.232 | -0.194 | 1.224 |
 |  | EITLEM-Kinetics* | 0.375 | 0.318 | 0.043 | 1.096 |
 |  | DeltaCata | **0.568** | **0.461** | **0.314** | **0.928** |
-|  | DeltaCata-ft | <u>0.559</u> | <u>0.444</u> | <u>0.307</u> | <u>0.933</u> |
+|  | DeltaCata-ft | 0.559 | 0.444 | 0.307 | 0.933 |
 | $\Delta$*k*<sub>cat</sub> mutant-mutant test set | UniKP | 0.075 | 0.079 | 0.005 | 1.006 |
 |  | DEKP | 0.242 | 0.162 | -0.005 | 1.011 |
 |  | CatPred | 0.146 | 0.114 | 0.019 | 0.999 |
 |  | EITLEM-Kinetics* | 0.153 | 0.165 | -0.103 | 1.059 |
-|  | DeltaCata | <u>0.374</u> | <u>0.305</u> | <u>0.125</u> | <u>0.943</u> |
+|  | DeltaCata | 0.374 | 0.305 | 0.125 | 0.943 |
 |  | DeltaCata-ft | **0.438** | **0.351** | **0.188** | **0.909** |
 | $\Delta$*K*<sub>m</sub> wildtype-mutant test set | UniKP | 0.058 | 0.014 | -0.135 | 0.757 |
 |  | DEKP | 0.073 | 0.053 | -0.165 | 0.767 |
 |  | CatPred | 0.118 | 0.127 | -0.125 | 0.754 |
 |  | EITLEM-Kinetics* | 0.176 | 0.153 | -0.076 | 0.737 |
-|  | DeltaCata | <u>0.364</u> | **0.288** | <u>0.111</u> | <u>0.670</u> |
-|  | DeltaCata-ft | **0.372** | <u>0.282</u> | **0.124** | **0.665** |
+|  | DeltaCata | 0.364 | **0.288** | 0.111 | 0.670 |
+|  | DeltaCata-ft | **0.372** | 0.282 | **0.124** | **0.665** |
 | $\Delta$*K*<sub>m</sub> mutant-mutant test set | UniKP | -0.003 | -0.031 | -0.009 | 0.676 |
 |  | DEKP | 0.032 | 0.046 | -0.088 | 0.702 |
-|  | CatPred | 0.051 | 0.073 | <u>0.002</u> | <u>0.672</u> |
+|  | CatPred | 0.051 | 0.073 | 0.002 | 0.672 |
 |  | EITLEM-Kinetics* | 0.016 | 0.048 | -0.138 | 0.718 |
-|  | DeltaCata | <u>0.189</u> | <u>0.150</u> | -0.006 | 0.675 |
+|  | DeltaCata | 0.189 | 0.150 | -0.006 | 0.675 |
 |  | DeltaCata-ft | **0.276** | **0.206** | **0.067** | **0.650** |
 
-Note: The best and second-best PCC, SCC, R<sup>2</sup> and RMSE values are indicated by bold and underlined fonts, respectively. EITLEM-Kinetics* denotes the EITLEM-Kinetics architecture retrained without the original transfer learning strategy. DeltaCata-ft denotes DeltaCata fine-tuned on mutant-mutant training pairs constructed from the original training set.
+Note: The best PCC, SCC, R<sup>2</sup> and RMSE values are indicated by bold fonts. EITLEM-Kinetics* denotes the EITLEM-Kinetics architecture retrained without the original transfer learning strategy. DeltaCata-ft denotes DeltaCata fine-tuned on mutant-mutant training pairs constructed from the original training set.
